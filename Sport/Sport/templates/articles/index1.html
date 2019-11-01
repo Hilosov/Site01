@@ -1,0 +1,160 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Не смотри вкладки !!!</title>
+    <link rel="stylesheet" href="{% static 'scripts/owlcarousel/assets/owl.carousel.min.css' %}">
+	<link rel="stylesheet" href="{% static 'scripts/owlcarousel/assets/owl.theme.default.min.css' %}">
+	<link href="https://fonts.googleapis.com/css?family=Mansalva&display=swap" rel="stylesheet">
+    <link rel="stylesheet" 
+    href="{% static 'css/homepage.css' %}">
+    <meta charset="utf-8">
+	<link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet">
+  </head>
+  <body>
+	
+	<header>
+	 	<div class="header-container">
+			<div onmouseover="logo()"se class="logo">
+				<img src="{% static 'img/logo.png' %}" alt="logo">
+			</div>
+			<input type="checkbox" id="menu-checkbox">
+ 			<nav role="navigation">
+				<label for="menu-checkbox" class="toggle-button"
+				data-open="MENU" data-close="CLOSE"></label>
+ 				<ul class="main-menu">
+					<li><a href="/articles">Статейки</a></li>
+					<li><a href="/plan">Планы</a></li>
+					<li><a href="#">Money</a></li>
+					<li><a href="#">Портфолио</a></li>
+ 				</ul>
+ 					
+ 			</nav>
+ 		</div>
+	</header>
+ 	
+	<main>
+		<section class="top-slide" >
+
+			<div class="top-container">
+				<div onclick="name()"><h2>Романов </h2></div>
+				<div onclick="name()"><h2>Кирилл Андреевич</h2></div>
+				<div><p></p></div>
+				<div><p></p></div>
+				<div><p></p></div>
+				<div><p></p></div>
+				<div><p></p></div>
+				<div><p></p></div>
+				<div><p></p></div>
+			</div>
+
+
+		</section>
+		<section class="specilize">
+			<div class="specilize-container">
+				<h3>Road to the first</h3>
+				<p>16 кг * 5</p>
+				<div class="specilize-card">
+					<div class="card">
+						<div class="topcard">
+							<img src="{% static 'img/logo.png' %}" alt="">
+						</div>
+						<div class="bottom-card">
+							<p class="first-p">Это <br>
+							картинка</p>
+						</div>
+					</div>
+					<div class="card">
+						<div class="topcard">
+							<img src="{% static 'img/logo.png' %}" alt="">
+						</div>
+						<div class="bottom-card">
+							<p class="first-p">Это <br>
+							картинка</p>
+						</div>
+					</div>
+					<div class="card">
+						<div class="topcard">
+							<img src="{% static 'img/logo.png' %}" alt="">
+						</div>
+						<div class="bottom-card">
+							<p class="first-p">Это <br>
+							картинка</p>
+						</div>
+					</div>	
+				</div>	
+			</div>
+			
+		</section>
+		<section class="portfolio">
+			<h4>OUR WORK</h4>
+			<p>Lorem ipsum dolor sit amet, consectetuer adip</p>
+			<div class="toggles">
+				<button id="showall">SHOW ALL</button>
+				<button id="webdev">WEB DEVELOPMENT</button>
+				<button id="webdesign">WEB DESIGN</button>
+				<button id="graphd">GRAPHIC DESIGN</button>
+			</div>
+			<div class="posts">
+				<div class="post webdesign"><img src="{% static 'img/portfolio.jpg' %}" alt=""></div>
+				<div class="post graphd"><img src="{% static 'img/portfolio.png' %}" alt=""></div>
+				<div class="post webdesign"><img src="{% static 'img/portfoli2.png' %}" alt=""></div>
+				<div class="post webdev"><img src="{% static 'img/development.png' %}" alt=""></div>
+				<div class="post webdev"><img src="{% static 'img/development 2.png' %}" alt=""></div>
+				<div class="post graphd"><img src="{% static 'img/portfoli2.png' %}" alt=""></div>
+			</div>
+		</section>
+		<section class="brand-slider">
+			<h4>Out Dooor</h4>
+			<p>Был пацан и нет пацана</p>
+			<div class="owl-carousel">
+				<div><img src="{% static 'img/apple.png' %}" alt=""></div>
+				<div><img src="{% static 'img/lamborghini.png' %}" alt=""></div>
+				<div><img src="{% static 'img/tesla.png' %}" alt=""></div>
+				<div><img src="{% static 'img/apple.png' %}" alt=""></div>
+				<div><img src="{% static 'img/lamborghini.png' %}" alt=""></div>
+				<div><img src="{% static 'img/tesla.png' %}" alt=""></div>
+				<div><img src="{% static 'img/apple.png' %}" alt=""></div>
+				<div><img src="{% static 'img/lamborghini.png' %}" alt=""></div>
+				<div><img src="{% static 'img/tesla.png' %}" alt=""></div>
+			</div>
+		</section>
+	</main>
+	<footer>
+		<div class="footer-container">
+			<div class="about-us">
+				<h4>ABOUT US</h4>
+				<p>Компания Intel официально анонсировала новейший процессор для настольных компьютеров – Core i9-9900KS с восемью вычислительными ядрами. По состоянию на 27 мая 2019 г. это самый мощный чип линейки Core, но ему по-прежнему недоступен 10-нанометровый техпроцесс, работу над которым Intel все никак не завершит.</p>
+				<a href="#">Learn more</a>
+				<h4>Photo stream</h4>
+				<div class="images">
+					<img src="{% static 'img/lamborghini.png' %}" alt="">
+					<img src="{% static 'img/lamborghini.png' %}" alt="">
+					<img src="{% static 'img/lamborghini.png' %}" alt="">
+					<img src="{% static 'img/lamborghini.png' %}" alt="">
+					<img src="{% static 'img/lamborghini.png' %}" alt="">
+					<img src="{% static 'img/lamborghini.png' %}" alt="">
+				</div>
+			</div>
+			<div class="tweets">
+				<h4>Latest</h4>
+
+			</div>
+			<div class="contacts">
+				<h4>BMW 8-series</h4>
+				<img src="{% static 'img/BMW 8-series.jpg' %}"> 
+			</div>
+		</div>
+	</footer>
+
+
+
+    <script
+  	src="https://code.jquery.com/jquery-3.4.1.min.js"
+  	integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+  	crossorigin="anonymous"></script>
+	<script src="{% static 'js/homepage.js' %}"></script>
+	<script src="{% static 'js/homepage1.js' %}"></script>
+	<script src="{% static 'scripts/owlcarousel/owl.carousel.min.js' %}"></script>
+  </body>
+</html>

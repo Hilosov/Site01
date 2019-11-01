@@ -1,0 +1,62 @@
+{% load static %}
+
+*{
+	margin: 0;
+	padding: 0;
+}
+body{
+	font-family: 'Mansalva', cursive;
+	background: url(images/base-body-bacground.jpg);
+	background-repeat: round;
+
+}
+li{
+	list-style: none;
+	display: flex;
+}
+a{
+	text-decoration: none;
+	color: #000;
+}
+
+.comment-main{
+	padding-left: 20px;
+}
+
+.comment-main form{
+	padding-left: 10px;
+}
+
+.head-navigation img{
+	margin-left: 37px;
+	width: 90px;
+	height: 90px;
+
+
+}
+.head-navigation{
+	display: flex;
+	justify-content: space-between;
+	font-size: 38px;
+	background: linear-gradient(15deg, #3b77bc, #4885cb, #2c9200);
+	width: 100%;
+	color: #000;
+}
+.name-article{
+	font-size: 50px;
+	text-align: center;
+	background: #00000024;
+	margin: 40px 40px 30px 40px;
+}
+.text-article{
+	font-size: 20px;
+	background: linear-gradient(45deg, #e9601e, #c7b39b);
+	text-align: left;
+}
+.articles-container{
+	width: 75%;
+	margin-top: 40px;
+	padding-left: 20px;
+	background: linear-gradient(to top, #da00ff, #0b023c, #00ff72);
+
+}

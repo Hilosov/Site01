@@ -1,0 +1,19 @@
+<span>
+				<div class="title">
+				<p>					
+    					{{ a.title }}					
+				</p>		
+				</div>
+				<div class="content">
+					<p>
+	    					{{ a.article_content }}
+					</p>
+				</div>
+			</span>		
+			<span>
+				<div class="images">
+				{% if a.mc_image %}
+				<img src="{{a.mc_image.url}}" >
+				{% endif %}
+				</div>	
+			</span>

@@ -1,0 +1,68 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href="{% static 'css/plan.css' %}">
+	<title>Приложения</title>
+	<link href="https://fonts.googleapis.com/css?family=Yanone+Kaffeesatz&display=swap" rel="stylesheet">
+</head>
+<body>
+	<header>
+		<div class="header">
+			<div class="logo">
+				<a href="/"><img src="{% static 'img/home.png' %}" alt=""></a>
+			</div>
+			<nav role="navigation">
+				<ul class="menu">
+					<li><a href="/plan/weather">Ссылка1</a></li>
+					<li><a href="#">Ссылка2</a></li>
+					<li><a href="#">Ссылка3</a></li>
+					<li><a href="/admin">Админка</a></li>
+				</ul>
+			</nav>
+			
+		</div>
+	</header>
+	<main>
+		{% for a in contents %}
+		<div class="info">
+			<div>			
+				<div class="title">
+					<p>					
+	    					{{ a.title }}					
+					</p>		
+				</div>
+				<div class="content">
+					<p>
+	    					{{ a.article_content }}
+					</p>
+				</div>
+			</div>
+			<div>
+				<div class="images">
+					{% if a.mc_image %}
+					<img src="{{a.mc_image.url}}" >
+					{% endif %}
+				</div>	
+			</div>
+		</div>
+		{% endfor %}
+	</main>
+
+
+
+
+	<footer>
+			
+	</footer>
+
+
+
+	<script
+  	src="https://code.jquery.com/jquery-3.4.1.min.js"
+  	integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+  	crossorigin="anonymous"></script>
+	<script src="{% static 'js/homepage.js' %}"></script>
+</body>
+</html>

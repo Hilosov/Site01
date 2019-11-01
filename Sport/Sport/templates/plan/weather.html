@@ -1,0 +1,51 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<title>Погода в вашем городе</title>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+	<link rel="stylesheet" href="{% static 'css/plan_weather.css' %}" >
+</head>
+<body>
+	<div class="container mt-5">
+		<div class="home">
+			<a href="/plan">Обратно</a>
+		</div>
+		<h1>Погодное приложение</h1>
+		<div class="row">
+			<div class="col-5">
+				<h1>Погода в вашем городе</h1>
+				<form action="" method="post">
+					{% csrf_token %}
+					<label for="city">Город</label>
+					{{ form.name }}
+					
+					<input type="submit" name="send" value="Узнать" class="mt-2 btn btn-danger">
+				</form>
+			</div>
+			<div class="col-5 offset-2">
+				<h1>Информация</h1>
+
+				
+				{% for info in all_info %}
+
+				<div class="alert alert-info">
+					<div class="row">
+						<div class="col-9">
+							<b>Город</b> {{ info.city }}<br> 
+							<b>Температура</b> {{ info.temp }}<sup>o</sup><br>
+						</div>
+						<div class="col-2 offset-1">	
+							<img src="http://openweathermap.org/img/w/{{info.icon}}.png" alt="Фото погоды" class="img-thumbnail">
+						</div>
+					</div>
+				</div>
+
+				{% endfor %}
+	
+			</div>
+		</div>
+	</div>
+</body>
+</html>

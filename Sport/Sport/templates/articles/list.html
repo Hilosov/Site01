@@ -1,0 +1,25 @@
+{% extends 'base.html' %}
+
+{% block title %}Cтатьи{% endblock %}
+
+{% block content %}
+
+	
+
+	{% if latest_articles_list %}
+	
+		{% for a in latest_articles_list %}
+			<section class="articles-container">		
+				<div class="name-article">
+					<a href="{% url 'articles:detail' a.id %}">{{a.article_title}}</a>
+				</div>
+				<div class="text-article">
+					<p>{{a.article_text}}</p>
+				</div>
+			</section>
+		{% endfor %}	
+	{% else %}
+		Статьи не найдено )=
+	{% endif %}
+
+{% endblock %}
