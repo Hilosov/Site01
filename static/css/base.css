@@ -6,7 +6,7 @@
 }
 body{
 	font-family: 'Mansalva', cursive;
-	background: url(images/base-body-bacground.jpg);
+	background: url(images/base-body-bacground.jpg) cover;
 	background-repeat: round;
 
 }

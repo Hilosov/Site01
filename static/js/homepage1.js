@@ -1,6 +1,6 @@
 function name(){
-	alert("ЭЭЭЭ");
+	alert("Нинада так делать");
 }
-function logo(){
-	;
+function no_link(){
+	alert("Пока не добавил но скоро будет");
 }
