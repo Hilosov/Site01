@@ -4,6 +4,7 @@
 }
 body{
 	font-family: 'Raleway', sans-serif;
+	width: 100%;
 }
 li{
 	list-style: none;
@@ -33,6 +34,12 @@ header{
 .topcard img {
 	height: 170px;
 
+}
+.header-container p{
+	color: #88b53f;
+	font-size: 25px;
+	margin-right: 63px;
+	padding: 27px 6px;
 }
 .header-container a{
 	color: #88b53f;
@@ -118,8 +125,7 @@ nav{
 .specilize-container p{
 	font-weight: bold;
 	font-size: 20px;
-	font-style: 24px;
-	margin-top: 20px;
+	font-weight: 24px;
 	margin-bottom: 20px;
 }
 .first-p{
@@ -136,50 +142,23 @@ nav{
 	display: flex;
 	justify-content: space-between;
 }
+.top-paragraph{
+	padding-top: 20px;
+}
+.specilize-card p{
+	
+	margin-top: 20px;
+}
 
-.portfolio{
-	width: 90%;
-	margin: 0 auto;
+.form-login{
+	color: #2962FF;
+	align-content: center;
+}
+.login-container{
+	align-content: center;
 	text-align: center;
 }
-.portfolio h4{
-	background: #424147;
-	padding: 0 8px;
-	font-size: 18px;
-	display: inline-block;
-	color: #f6e10a;
-	margin-bottom: 30px;
-}
-.portfolio p{
-	color: #424146;
-	font-size: 25px;
-}
-.toggles button{
-	border: none;/*Рамки кнопок*/
-	color: #424146;
-	cursor: pointer;/*Курсор*/
-	font-size: 16px;/*Размер текста*/
-	margin: 20px 5px;/*Отступы*/
-	background: #fff;
-}
-.toggles button:after{
-	content: ' / ';
-}
-.toggles button:last-child:after{
-	content: '';
-}
 
-.posts{
-	width: 90%;
-	display: grid;
-	margin: 0 auto;
-	grid-template-columns: auto auto auto auto; /*Колонны - 4 */
-
-}
-.posts img{
-	width: 100%;
-	padding: 5px 50px;
-}
 .brand-slider{
 	width: 90%;
 	margin: 0 auto;
@@ -212,7 +191,7 @@ footer h4 {
 	width: 90%;
 	margin: 0 auto;
 	display: grid;
-	grid-template-columns: 40% 70%;
+	grid-template-columns: 40% 60%;
 	grid-column-gap: 3%;
 }
 .footer-container .about-us a{

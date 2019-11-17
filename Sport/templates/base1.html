@@ -4,9 +4,39 @@
 <head>
     <meta charset="UTF-8">
     <title>{% block title %}{% endblock %}</title>
+    <link rel="stylesheet" href="{% static 'css/homepage.css' %}">
     <link rel="shortcut icon" href="{% static 'img/icon.ico' %}" type="image/x-icon">
 </head>
 <body>
+    <header>
+	 	<div class="header-container">
+			<div onmouseover="logo()"se class="logo">
+				<img src="{% static 'img/logo.png' %}" alt="logo">
+			</div>
+			<input type="checkbox" id="menu-checkbox">
+ 			<nav role="navigation">
+				<label for="menu-checkbox" class="toggle-button"
+				data-open="MENU" data-close="CLOSE"></label>
+ 				<ul class="main-menu">
+					<li><a href="/articles">О себе </a></li>
+					<li><a href="/plan">Планы</a></li>
+					<li><a href="/money">Money</a></li>
+                    <li><a href="#">Портфолио</a></li>
+
+                    {% if user.is_authenticated %}
+                        <p>Hi {{ user.username }}!</p>
+                        <a href="{% url 'logout' %}">Log out</a>
+                    {% else %}
+                        <li><a href="{% url 'login' %}">login</a></li>       
+                    {% endif %}
+                
+
+
+                </ul>
+ 					
+ 			</nav>
+ 		</div>
+	</header>
     {% block content %}{% endblock %}
 </body>
 </html>

@@ -25,7 +25,9 @@ urlpatterns = [
 	path('grappelli/', include('grappelli.urls')), # grappelli URLS
     path('admin/', admin.site.urls),
     path('articles/', include('articles.urls')),
-    path('money/', include('money.urls'))
+    path('money/', include('money.urls')),
+    path('accounts/', include('django.contrib.auth.urls')),
+    # path('accounts/', include('accounts.urls')),
 ]
 
 if settings.DEBUG:

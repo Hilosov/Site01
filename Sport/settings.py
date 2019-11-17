@@ -52,6 +52,7 @@ INSTALLED_APPS = [
    	'homepage',
     'plan',
     'money',
+    'accounts',
 ]
 
 MIDDLEWARE = [
@@ -143,3 +144,4 @@ MEDIA_URL = '/media/'
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 
 LOGIN_REDIRECT_URL = 'homepage'
+LOGOUT_REDIRECT_URL = 'homepage'
