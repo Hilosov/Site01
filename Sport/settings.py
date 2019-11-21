@@ -43,8 +43,8 @@ STATICFILES_FINDERS = [
 INSTALLED_APPS = [
     'articles.apps.ArticlesConfig',
     'grappelli',
-    'django.contrib.admin',
     'django.contrib.auth',
+    'django.contrib.admin',
     'django.contrib.contenttypes',
     'django.contrib.sessions',
     'django.contrib.messages',
@@ -52,7 +52,7 @@ INSTALLED_APPS = [
    	'homepage',
     'plan',
     'money',
-    'accounts',
+    'users',
 ]
 
 MIDDLEWARE = [
@@ -145,3 +145,4 @@ MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 
 LOGIN_REDIRECT_URL = 'homepage'
 LOGOUT_REDIRECT_URL = 'homepage'
+# AUTH_USER_MODEL = 'users.CustomUser'

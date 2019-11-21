@@ -1,0 +1,19 @@
+{% extends 'base1.html' %}
+{% load static %}
+
+{% block title %}Login{% endblock %}
+
+{% block content %}
+<section class="top-login">
+    <h2>Registration</h2>
+
+        <form class="form-login" action="" method="POST">
+            {% csrf_token %}
+
+            {{form.as_p}}
+
+            <button class="btn-login" type="submit">Sign up</button>
+
+        </form>
+</section>
+{% endblock %}
