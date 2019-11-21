@@ -158,12 +158,56 @@ nav{
 	align-content: center;
 	text-align: center;
 }
-
+.top-login{
+	background: radial-gradient(ellipse at bottom, #1B2735 0%, #090A0F 100%);
+	text-align: center;
+	padding-top: 100px;
+	height: 700px;
+}
+.form-login input{
+	border: 1px solid;
+	padding-left: 20px;
+	width: 80%;
+	font-size: 25px;
+	height: 30px;
+	border-radius: 10px;
+	background: #214c48;
+	color: #008c7f ;
+}
+.form-login input:focus{
+	box-shadow: 0px 0px 10px 2px #34bd9d;
+	outline:none;
+	background: #fff;
+	color: #000;
+}
+.form-login label{
+	padding-top: 20px;
+	text-align: center;
+	display: grid;
+	font-size: 24px;
+	padding-bottom: 30px;
+}
+.form-login button{
+	margin-top: 45px;
+	width: 10%;
+	font-size: 24px;
+	height: 30px;
+	background: #214c48;
+	border: 2px solid;
+	outline: none;
+}
 .brand-slider{
 	width: 90%;
 	margin: 0 auto;
 	text-align: center;
 	margin-bottom: 100px;
+}
+.top-login h2{
+	display: inline;
+	font-size: 70px;
+	border-radius: 25px;
+	box-shadow: inset 0px 0px 35px #00FF7B;
+
 }
 .brand-slider h4{
 	background: #424147;
