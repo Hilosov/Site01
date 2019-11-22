@@ -1,6 +1,4 @@
-function name(){
-	alert("Нинада так делать");
-}
-function no_link(){
-	alert("Пока не добавил но скоро будет");
-}
+$('.ul-user').on('click', function(e){
+    $('.menu-login').toggleClass('menu-login_activ');
+    $('.ul-user').toggleClass('ul-user_activ');
+});

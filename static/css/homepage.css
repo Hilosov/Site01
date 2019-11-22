@@ -53,6 +53,11 @@ header{
 	border: 0px solid ;
 	box-shadow: inset 0px 0px 45px #00ff5a85;
 }
+.header-container p:hover{
+	border-radius: 100px;
+	border: 0px solid ;
+	box-shadow: inset 0px 0px 45px #00ff5a85;
+}
 #menu-checkbox{
 	display: none;
 }
@@ -162,17 +167,17 @@ nav{
 	background: radial-gradient(ellipse at bottom, #1B2735 0%, #090A0F 100%);
 	text-align: center;
 	padding-top: 100px;
-	height: 700px;
+	height: 1000px;
 }
 .form-login input{
-	border: 1px solid;
+	border: 1px solid #000;
 	padding-left: 20px;
 	width: 80%;
 	font-size: 25px;
 	height: 30px;
 	border-radius: 10px;
 	background: #214c48;
-	color: #008c7f ;
+	color: #ffc800 ;
 	margin-bottom: 20px;
 }
 .form-login input:focus{
@@ -182,17 +187,22 @@ nav{
 	color: #000;
 }
 .form-login label{
-	padding-top: 20px;
 	text-align: center;
 	display: grid;
 	font-size: 24px;
 	padding-bottom: 30px;
 }
-.form-login button{
+.form-login a{
+	font-size: 30px;
+	color: #88b53f ;
+	display: block;
+}
+
+.top-login button{
 	margin-top: 45px;
-	width: 10%;
+	width: auto;
 	font-size: 24px;
-	height: 30px;
+	height: 40px;
 	background: #214c48;
 	border: 2px solid;
 	outline: none;
@@ -213,6 +223,71 @@ nav{
 	box-shadow: inset 0px 0px 35px #00FF7B;
 
 }
+
+.top-login p{
+	padding-top: 20px;
+	font-size: 30px;
+	display: block;
+}
+.top-login img {
+	margin-top: 35px;
+	display: block;
+    margin-left: 30%;
+    width: 40%;
+}
+.top-login li{
+	padding-top: 35px;
+	font-size: 20px;
+	color: #88b53f;
+	text-align: center;
+	display: block;
+}
+
+.ul-user{
+	position: relative;
+}
+.menu-login a{
+	padding-top: 0 ;
+	display: block;
+	margin-right: 0px;
+}
+.menu-login{
+	position: absolute;
+	display: block;
+	opacity: 0;
+	top: -999999999999em;
+	
+	
+}
+.ul-user::after{
+	content: " ";
+	position: absolute;
+	border: 10px solid;
+	border-color: transparent transparent transparent #88b53f;
+	top: 31px;
+	right: 39px;
+	transition: 0.2s;
+}
+.menu-login_activ{
+	opacity: 1;
+	top: 100px;
+}
+.ul-user_activ::after{
+	border-color:#88b53f transparent  transparent  transparent ;
+	top: 37px;
+}
+.ul-user button{
+	background: none;
+	border: none;
+	outline: none;
+}
+.ul-user_activ{
+	font-size: 45px;
+}
+
+
+
+
 .brand-slider h4{
 	background: #424147;
 	padding: 0 8px;
