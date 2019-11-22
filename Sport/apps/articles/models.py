@@ -21,7 +21,7 @@ class Article(models.Model):
 
 
 class Comment(models.Model):
-	article =models.ForeignKey(Article, on_delete = models.CASCADE)
+	article =  models.ForeignKey(Article, on_delete = models.CASCADE)
 	author_name = models.CharField('Name', max_length = 50)
 	comment_text = models.CharField('Text', max_length = 200)
 
