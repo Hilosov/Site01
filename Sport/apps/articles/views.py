@@ -1,6 +1,8 @@
 from django.http import Http404, HttpResponseRedirect
 from django.shortcuts import render
 
+from django.shortcuts import redirect
+
 from django.urls import reverse
 
 from .models import Article
@@ -21,11 +23,17 @@ def detail(request, article_id):
 	return render(request, 'articles/detail.html', {'article': a, 'latest_comment_list': latest_comment_list})
 
 def leave_comment(request, article_id):
-	try:
-		a = Article.objects.get( id = article_id )
-	except:
-		raise Http404("Статья не найдена !")
+	
+	if not request.user.is_authenticated:
 
-	a.comment_set.create(author_name = request.POST['name'], comment_text = request.POST['text'])	
+		return redirect('login')
+		
+	else:
+		try:
+			a = Article.objects.get( id = article_id )
+		except:
+			raise Http404("Статья не найдена !")
 
-	return HttpResponseRedirect( reverse('articles:detail', args =(a.id, )) )
+		a.comment_set.create(author_name = request.POST['name'], comment_text = request.POST['text'])	
+
+		return HttpResponseRedirect( reverse('articles:detail', args =(a.id, )) )
