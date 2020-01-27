@@ -41,14 +41,14 @@ header{
 	margin-right: 63px;
 	padding: 27px 6px;
 }
-.header-container a{
+.navigation a{
 	color: #88b53f;
 	font-size: 25px;
 	margin-right: 63px;
 	padding: 27px 6px;
 }
 
-.header-container a:hover{
+.navigation a:hover{
 	border-radius: 100px;
 	border: 0px solid ;
 	box-shadow: inset 0px 0px 45px #00ff5a85;

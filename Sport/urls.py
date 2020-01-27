@@ -18,6 +18,12 @@ from django.urls import path, include
 from django.contrib.staticfiles.urls import staticfiles_urlpatterns
 from django.conf.urls.static import static
 from django.conf import settings
+from django.views.defaults import page_not_found
+import django
+
+
+def custom_page_not_found(request):
+    return django.views.defaults.page_not_found(request, None)
 
 urlpatterns = [
     path('plan/', include('plan.urls')),
@@ -28,6 +34,9 @@ urlpatterns = [
     path('money/', include('money.urls')),
     path('users/', include('django.contrib.auth.urls')),
     path('users/', include('users.urls')),
+
+    #http
+    path('404/', custom_page_not_found)
 ]
 
 if settings.DEBUG:

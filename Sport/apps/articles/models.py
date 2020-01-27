@@ -38,7 +38,7 @@ class Comment(models.Model):
 	comment_text = models.CharField('Text', max_length = 200)
 
 	def __str__(self):
-		return self.author_name
+		return self.author_name.username
 
 	class Meta:
 		verbose_name = 'Комментарий'

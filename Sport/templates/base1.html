@@ -11,10 +11,11 @@
     <header>
 	 	<div class="header-container">
 			<div onmouseover="logo()"se class="logo">
-				<img src="{% static 'img/logo.png' %}" alt="logo">
+				<a href="/"><img src="{% static 'img/logo.png' %}" alt="logo"></a>
+				
 			</div>
 			<input type="checkbox" id="menu-checkbox">
- 			<nav role="navigation">
+ 			<nav role="navigation" class="navigation">
 				<label for="menu-checkbox" class="toggle-button"
 				data-open="MENU" data-close="CLOSE"></label>
  				<ul class="main-menu">
@@ -46,6 +47,32 @@
 	{% block content %}{% endblock %}
 	
 
+	<footer>
+			<div class="footer-container">
+				<div class="about-us">
+					<h4>ABOUT US</h4>
+					<p>Компания Intel официально анонсировала новейший процессор для настольных компьютеров – Core i9-9900KS с восемью вычислительными ядрами. По состоянию на 27 мая 2019 г. это самый мощный чип линейки Core, но ему по-прежнему недоступен 10-нанометровый техпроцесс, работу над которым Intel все никак не завершит.</p>
+					<a target="_blank" href="https://www.cnews.ru/news/top/2019-05-27_intel_predstavila_samyj_moshchnyj_protsessor_core">Learn more</a>
+					<a href="{% url 'login' %}">login</a>
+				</div>
+				<div class="contacts">
+						<ul class="social">
+							<li class="social_item vk">
+								<a href="https://vk.com/id195668922" class="fab fa-vk" target="_blank"></a>
+							</li>
+							<li class="social_item google">
+								<a href="https://www.google.com/ " class="fab fa-google" target="_blank"></a>		
+							</li>
+							<li class="social_item instagram">
+							  <a onclick="no_link()" href="#" class="fab fa-instagram" ></a>
+							</li>
+							<li class="social_item telegram">
+							  <a onclick="no_link()" href="#" class="fab fa-telegram-plane" ></a>
+							</li>
+						</ul>
+				</div>
+			</div>
+		</footer>
 
 	<script
   	src="https://code.jquery.com/jquery-3.4.1.min.js"

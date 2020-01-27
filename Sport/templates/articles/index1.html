@@ -21,7 +21,7 @@
 				<img src="{% static 'img/logo.png' %}" alt="logo">
 			</div>
 			<input type="checkbox" id="menu-checkbox">
- 			<nav role="navigation">
+ 			<nav role="navigation" class="navigation">
 				<label for="menu-checkbox" class="toggle-button"
 				data-open="MENU" data-close="CLOSE"></label>
  				<ul class="main-menu">
@@ -44,7 +44,7 @@
 				<div ><h2 onclick="name()">Кирилл </h2></div>
 			</div>
 
-
+		
 		</section>
 		<section class="specilize">
 			<div class="specilize-container">
@@ -78,10 +78,8 @@
 			</div>
 			
 		</section>
-		
 		<section class="brand-slider">
 			<h4>Out Dooor</h4>
-			<p>Был пацан и нет пацана</p>
 			<div class="owl-carousel">
 				<div><img src="{% static 'img/apple.png' %}" alt=""></div>
 				<div><img src="{% static 'img/lamborghini.png' %}" alt=""></div>
@@ -130,6 +128,7 @@
   	crossorigin="anonymous"></script>
 	<script src="{% static 'js/homepage.js' %}"></script>
 	<script src="{% static 'js/homepage1.js' %}"></script>
+	<script src="{% static 'js/main.js' %}" ></script>
 	<script src="{% static 'scripts/owlcarousel/owl.carousel.min.js' %}"></script>
   </body>
 </html>
